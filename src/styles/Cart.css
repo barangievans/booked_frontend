@@ -1,0 +1,52 @@
+/* Carts Page Styles */
+.carts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .carts-container h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  /* Individual Cart Links */
+  .cart-link {
+    background-color: #007bff; /* Blue background for cart links */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-size: 1.2em;
+    width: 200px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Hover Effect for Cart Links */
+  .cart-link:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarges the link when hovered */
+  }
+  
+  /* Active link styles (when clicked) */
+  .cart-link:active {
+    background-color: #003366; /* Darkest blue when clicked */
+  }
+  
+  /* Responsive Design for Smaller Screens */
+  @media (max-width: 768px) {
+    .carts-container h2 {
+      font-size: 1.5em;
+    }
+  
+    .cart-link {
+      width: 100%; /* Make links full-width on smaller screens */
+      font-size: 1.1em;
+    }
+  }
+  
