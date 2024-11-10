@@ -1,0 +1,40 @@
+/* src/components/Navbar.css */
+
+.navbar {
+    background-color: #4CAF50; /* Green background */
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-list {
+    display: flex;
+    justify-content: flex-start; /* Align links from left to right */
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-list li {
+    margin-right: 20px; /* Add space between links */
+}
+
+.navbar-list li a {
+    color: blue; /* White color for links */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+}
+
+.navbar-list li a:hover {
+    background-color: black; /* Darker green for hover effect */
+    border-radius: 5px;
+}
+
+/* Ensuring visibility of Welcome message */
+.welcome-message {
+    color: #FFFFFF; /* White color for the welcome message */
+    font-size: 18px;
+    margin-left: auto; /* Align the message to the right */
+}

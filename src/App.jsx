@@ -5,7 +5,7 @@ import HomePage from './pages/HomePage'; // Assuming this file exists
 import ShopPage from './pages/ShopPage'; // Assuming this file exists
 import CartPage from './pages/CartPage'; // Main Cart Page
 import LendingCartPage from './pages/LendingCartPage'; // Lending Cart Page
-import BorrowingCartPage from './pages/BorrowingCartPage'; // Borrowing Cart Page
+import BorrowingCartPage from './pages/BorrowingCartPage';  // Ensure this is correct
 import PurchaseCartPage from './pages/PurchaseCartPage'; // Purchase Cart Page
 import CheckoutPage from './pages/CheckoutPage'; // Checkout Page
 import LoginPage from './pages/LoginPage'; // Login Page
