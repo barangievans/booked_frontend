@@ -1,0 +1,28 @@
+/* src/styles/BookDetails.css */
+.book-details {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+  .book-details img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .book-details h2 {
+    color: #4caf50;
+    margin-bottom: 10px;
+  }
+  
+  .book-details p {
+    color: #666;
+    font-size: 0.95rem;
+    margin: 5px 0;
+  }
+  
