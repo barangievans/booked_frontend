@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+=======
+# Getting Started with Create React App and Redux
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+>>>>>>> temp-branch
 
 ## Available Scripts
 
@@ -45,6 +51,7 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
+<<<<<<< HEAD
 ### Code Splitting
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
@@ -68,3 +75,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+### Redux Documentation
+If you are new to Redux, check out the official Redux documentation at [redux.js.org](https://redux.js.org/). The Redux Toolkit is the recommended approach for working with Redux, as it helps simplify many of the common patterns and reduces boilerplate code.
+
+### Redux Toolkit
+The Redux Toolkit is a set of tools that helps simplify the process of writing Redux logic. It includes utilities for creating slices, managing async logic, and more. Learn more in the [Redux Toolkit documentation](https://redux-toolkit.js.org/).
+
+### Redux and React
+To integrate Redux with React, use the `react-redux` library. This library provides bindings to connect your Redux store to React components, allowing you to dispatch actions and read state from the Redux store in your components.
+
+You can find more information in the [React-Redux documentation](https://react-redux.js.org/).
+>>>>>>> temp-branch

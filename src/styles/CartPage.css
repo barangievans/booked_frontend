@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* src/styles/CartPage.css */
 
 .cart-page {
@@ -11,6 +12,12 @@
     text-align: center;
     font-size: 2rem;
     margin-bottom: 20px;
+=======
+.cart-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+>>>>>>> temp-branch
   }
   
   .cart-items {
@@ -22,6 +29,7 @@
   .cart-item {
     display: flex;
     align-items: center;
+<<<<<<< HEAD
     justify-content: space-between;
     background-color: #f9f9f9;
     padding: 10px;
@@ -88,5 +96,41 @@
   
   .checkout-button:hover {
     background-color: #27ae60;
+=======
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .cart-item-image {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+  }
+  
+  .cart-item-details {
+    flex: 1;
+  }
+  
+  .cart-item-details h2 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .checkout-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .checkout-button:hover {
+    background-color: #218838;
+>>>>>>> temp-branch
   }
   
