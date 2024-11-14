@@ -44,3 +44,14 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Redux Documentation
+If you are new to Redux, check out the official Redux documentation at [redux.js.org](https://redux.js.org/). The Redux Toolkit is the recommended approach for working with Redux, as it helps simplify many of the common patterns and reduces boilerplate code.
+
+### Redux Toolkit
+The Redux Toolkit is a set of tools that helps simplify the process of writing Redux logic. It includes utilities for creating slices, managing async logic, and more. Learn more in the [Redux Toolkit documentation](https://redux-toolkit.js.org/).
+
+### Redux and React
+To integrate Redux with React, use the `react-redux` library. This library provides bindings to connect your Redux store to React components, allowing you to dispatch actions and read state from the Redux store in your components.
+
+You can find more information in the [React-Redux documentation](https://react-redux.js.org/).
