@@ -1,55 +1,92 @@
-/* General reset for padding and margin */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Navbar container */
-  nav {
-    background-color: #333;
-    padding: 10px 20px;
-  }
-  
-  /* Unordered list for links */
+/* General styling for the navbar */
+nav {
+  background-color: #333; /* Dark background color */
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+}
+
+nav ul {
+  display: flex;               /* Display the nav items in a row */
+  list-style: none;            /* Remove default list style */
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;  /* Distribute items across the navbar */
+  align-items: center;         /* Vertically align items */
+}
+
+nav li {
+  margin: 0 15px;              /* Space out list items */
+}
+
+nav a {
+  color: #fff;                 /* White text color for the links */
+  text-decoration: none;       /* Remove underline from links */
+  font-size: 16px;             /* Font size for the links */
+  font-weight: bold;           /* Make the links bold */
+  transition: color 0.3s ease; /* Smooth transition effect for hover */
+}
+
+nav a:hover {
+  color: #f0a500;              /* Change color on hover to a goldish tone */
+}
+
+nav a.active {
+  color: #f0a500;              /* Highlight active links */
+}
+
+nav .admin-links, nav .user-links {
+  display: flex;               /* Group admin/user links separately */
+}
+
+nav .admin-links li, nav .user-links li {
+  margin-left: 20px;           /* Space between admin/user links */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
   nav ul {
-    display: flex;
-    justify-content: center; /* Centers the links horizontally */
-    list-style-type: none;
+    flex-direction: column;    /* Stack the nav items vertically on mobile */
+    align-items: flex-start;   /* Align to the left */
   }
-  
-  /* List item style */
-  nav ul li {
-    margin: 0 15px; /* Space between the links */
+
+  nav li {
+    margin: 10px 0;            /* Add more space between items vertically */
   }
-  
-  /* Link styles */
-  nav ul li a {
+}
+
+/* Mobile menu toggle button */
+.navbar-toggle {
+  display: none;              /* Hide the toggle button on larger screens */
+}
+
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: block;            /* Show the toggle button on mobile */
+    background-color: #333;
     color: white;
-    text-decoration: none;
-    font-size: 1.1em;
-    padding: 8px 12px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
   }
-  
-  /* Hover effect for links */
-  nav ul li a:hover {
-    background-color: #555;
+
+  nav ul {
+    display: none;             /* Initially hide the menu on small screens */
+    flex-direction: column;    /* Stack the menu vertically */
+    width: 100%;
   }
-  
-  /* Responsive design for mobile */
-  @media (max-width: 768px) {
-    nav ul {
-      flex-direction: column; /* Stacks the links vertically */
-    }
-  
-    nav ul li {
-      margin: 10px 0; /* Adds space between stacked links */
-    }
+
+  nav.active ul {
+    display: flex;             /* Show the menu when the navbar is active */
   }
-  
+
+  nav li {
+    width: 100%;               /* Ensure items fill the available width */
+    text-align: left;          /* Align text to the left */
+  }
+
+  nav a {
+    padding: 10px;
+    width: 100%;               /* Make the link occupy full width */
+  }
+}

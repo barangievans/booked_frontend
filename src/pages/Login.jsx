@@ -1,26 +1,48 @@
 import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
-import { loginSuccess } from '../redux/slices/authSlice';
 
-function Login() {
+const Login = ({ loginUser }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const dispatch = useDispatch();
 
-  const handleLogin = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    // Mock login action
-    dispatch(loginSuccess({ email }));
+    
+    // You can replace this with actual authentication logic (API call)
+    if (email === 'admin@example.com' && password === 'admin123') {
+      loginUser(true); // Pass true for admin user
+    } else if (email === 'user@example.com' && password === 'user123') {
+      loginUser(false); // Pass false for normal user
+    } else {
+      alert('Invalid credentials');
+    }
   };
 
   return (
-    <form onSubmit={handleLogin}>
+    <div>
       <h2>Login</h2>
-      <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Email" required />
-      <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password" required />
-      <button type="submit">Login</button>
-    </form>
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label>Email</label>
+          <input 
+            type="email" 
+            value={email} 
+            onChange={(e) => setEmail(e.target.value)} 
+            required 
+          />
+        </div>
+        <div>
+          <label>Password</label>
+          <input 
+            type="password" 
+            value={password} 
+            onChange={(e) => setPassword(e.target.value)} 
+            required 
+          />
+        </div>
+        <button type="submit">Login</button>
+      </form>
+    </div>
   );
-}
+};
 
 export default Login;
