@@ -6,23 +6,44 @@ import '../styles/Home.css';
 
 function Home() {
   const dispatch = useDispatch();
-  const books = useSelector(state => state.books.items);
+  const books = useSelector((state) => state.books.items);
 
   useEffect(() => {
-    // Fetch books from API (mock example)
     const fetchBooks = async () => {
-      const response = await fetch('/api/books');
-      const data = await response.json();
-      dispatch(setBooks(data));
+      try {
+        // Update this URL based on where your backend is running
+        const response = await fetch('http://localhost:5000/api/books');
+        
+        // If the response is not ok (status code not 200), throw an error
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+
+        // Check if the content type is JSON
+        const contentType = response.headers.get('Content-Type');
+        if (!contentType || !contentType.includes('application/json')) {
+          const text = await response.text();  // Get text to debug
+          throw new Error('Received non-JSON response: ' + text);
+        }
+
+        // Parse the response as JSON
+        const data = await response.json();
+        dispatch(setBooks(data)); // Dispatch the data to Redux
+
+      } catch (error) {
+        console.error('Error fetching books:', error);
+        // Optionally show an error message to the user here
+      }
     };
-    fetchBooks();
+
+    fetchBooks(); // Call the fetch function
   }, [dispatch]);
 
   return (
     <div>
       <h2>Books for Sale</h2>
       <div className="book-grid">
-        {books.map(book => (
+        {books.map((book) => (
           <BookCard key={book.id} book={book} />
         ))}
       </div>

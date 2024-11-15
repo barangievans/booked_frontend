@@ -1,0 +1,46 @@
+/* Library.css */
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .book-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    width: 250px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .book-item h3 {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .book-item p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .book-item button {
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .book-item button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .book-item button:hover {
+    background-color: #2980b9;
+  }
+  

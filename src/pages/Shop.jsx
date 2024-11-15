@@ -1,18 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'; 
 import BookList from '../components/admin/BookList';  // Correct path to BookList
 import Pagination from '../components/Pagination';  // Correct path to Pagination component
 import '../styles/Shop.css';  // Correct path to Shop.css
 
-// Example data for products (you can replace this with API calls)
+// Example data for books with images
 const mockBooks = [
-  { id: 1, title: 'Book One', category: 'Fiction', price: 19.99 },
-  { id: 2, title: 'Book Two', category: 'Non-Fiction', price: 29.99 },
-  { id: 3, title: 'Book Three', category: 'Science', price: 15.99 },
-  { id: 4, title: 'Book Four', category: 'Fiction', price: 22.99 },
-  { id: 5, title: 'Book Five', category: 'Fiction', price: 18.99 },
-  { id: 6, title: 'Book Six', category: 'Non-Fiction', price: 25.99 },
-  { id: 7, title: 'Book Seven', category: 'Science', price: 17.99 },
-  { id: 8, title: 'Book Eight', category: 'Fiction', price: 23.99 },
+  { id: 1, title: 'Book One', category: 'Fiction', price: 19.99, image: 'https://via.placeholder.com/150' },
+  { id: 2, title: 'Book Two', category: 'Non-Fiction', price: 29.99, image: 'https://via.placeholder.com/150' },
+  { id: 3, title: 'Book Three', category: 'Science', price: 15.99, image: 'https://via.placeholder.com/150' },
+  { id: 4, title: 'Book Four', category: 'Fiction', price: 22.99, image: 'https://via.placeholder.com/150' },
+  { id: 5, title: 'Book Five', category: 'Fiction', price: 18.99, image: 'https://via.placeholder.com/150' },
+  { id: 6, title: 'Book Six', category: 'Non-Fiction', price: 25.99, image: 'https://via.placeholder.com/150' },
+  { id: 7, title: 'Book Seven', category: 'Science', price: 17.99, image: 'https://via.placeholder.com/150' },
+  { id: 8, title: 'Book Eight', category: 'Fiction', price: 23.99, image: 'https://via.placeholder.com/150' },
 ];
 
 const categories = ['All', 'Fiction', 'Non-Fiction', 'Science'];

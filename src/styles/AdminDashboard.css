@@ -1,0 +1,28 @@
+/* src/styles/AdminDashboard.css */
+.admin-dashboard {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.admin-dashboard h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+.admin-dashboard-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-dashboard-menu li {
+  margin: 10px 0;
+}
+
+.admin-dashboard-menu li a {
+  color: #27ae60;
+  text-decoration: none;
+}
+
+.admin-dashboard-menu li a:hover {
+  text-decoration: underline;
+}
